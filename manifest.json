@@ -1,0 +1,24 @@
+{
+    "name": "Cambalache",
+    "description": "Display random Cambalache books on a new tab",
+    "version": "1.0.0",
+    "content_scripts": [{
+		"js": [
+            "js/jquery-3.3.1.slim.min.js",
+            "js/newtab.js"
+        ],
+		"matches": ["*://*.google.com/_/chrome/newtab*"]
+	}],
+	"permissions" : [
+        "tabs"
+    ],
+    "chrome_url_overrides" : {
+        "newtab": "newtab.html"
+    },
+    "browser_action": {
+        "default_icon":"images/cambalache-icon.png",
+        "default_title": "Cambalache",
+        "default_popup": "popup.html" 
+    },
+	"manifest_version": 2
+}
