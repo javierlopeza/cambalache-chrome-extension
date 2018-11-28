@@ -1,7 +1,7 @@
 {
     "name": "Cambalache",
     "description": "Display random Cambalache books on a new tab",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "content_scripts": [{
 		"js": [
             "js/jquery-3.3.1.slim.min.js",
